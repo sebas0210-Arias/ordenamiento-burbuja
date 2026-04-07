@@ -10,7 +10,11 @@ public class Ordenamiento {
          
          int arr[] = new int[n];
          
-         
+         //Solicitar datos
+          for (int i = 0; i < n; i++) {
+            System.out.print("Ingrese el Numero"+ i + ": ");
+            arr[i] = sc.nextInt();
+        }
         
         
         
