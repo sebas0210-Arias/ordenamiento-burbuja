@@ -2,19 +2,23 @@ package com.mycompany.ordenamiento;
 
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Random;
+
 
 public class Ordenamiento {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+          Random rand = new Random();
 
         System.out.print("Ingrese el tamaño de su arreglo?: ");
         int n = sc.nextInt();
 
         int[] arr = new int[n];
 
-        // Solicitar datos
+        //  datos por aleatoreo 
+        
         for (int i = 0; i < n; i++) {
             System.out.print("Ingrese el número " + i + ": ");
             arr[i] = sc.nextInt();
