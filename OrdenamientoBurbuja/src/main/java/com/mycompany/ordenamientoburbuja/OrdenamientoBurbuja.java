@@ -12,23 +12,24 @@ public class OrdenamientoBurbuja {
        
        System.out.println(Arrays.toString(arr));
        
-      ordenarburbuja(arr);
+      arr= ordenarburbuja(arr);
        System.out.println(Arrays.toString(arr));
     }
 
-    private static void ordenarburbuja(int[] arr) {
-        int n = arr.length;
+    private static int[] ordenarburbuja(int[] arr) {
+        int auxArr[]= new int[arr.length];
+        System.arraycopy(arr,0, auxArr, 0, 0);
+        int n=auxArr.length;
        for(int i=0; i< n-1; i++){
        for (int j =i+1; j < n; j++){
-           if(arr[i] > arr[j]) {
-               int aux = arr[j];
-               arr[j] = arr [i];
-               arr[i]= aux;
+           if(auxArr[i] > auxArr[j]) {
+               int aux = auxArr[j];
+               auxArr[j] = auxArr[i];
+               auxArr[i]= aux;
            }
-       }
-       
-       
-       
+       }  
     }
+        return auxArr;
   }
 }
+
