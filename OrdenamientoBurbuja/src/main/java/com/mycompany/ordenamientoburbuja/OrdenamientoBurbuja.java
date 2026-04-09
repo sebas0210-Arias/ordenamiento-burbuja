@@ -12,7 +12,12 @@ public class OrdenamientoBurbuja {
        
        System.out.println(Arrays.toString(arr));
        
-       int n = arr.length;
+      ordenarburbuja(arr);
+       System.out.println(Arrays.toString(arr));
+    }
+
+    private static void ordenarburbuja(int[] arr) {
+        int n = arr.length;
        for(int i=0; i< n-1; i++){
        for (int j =i+1; j < n; j++){
            if(arr[i] > arr[j]) {
@@ -25,5 +30,5 @@ public class OrdenamientoBurbuja {
        
        
     }
-    }
+  }
 }
